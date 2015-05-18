@@ -34,6 +34,12 @@ namespace TerraformSimCS
         {
             //new game
             //eventually have difficulty levels Easy, Medium, Hard, Random
+            //Size resolution is important as well
+            int granularity;
+            //display granularity on buttons
+
+            granularity = 10;  //width&height|granularity = size of rectangles
+
         }
     }
 
