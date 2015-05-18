@@ -30,16 +30,22 @@ namespace TerraformSimCS
             //returns loaded file to put into bitmap
         }
 */
-        static void New()
+        static void New() //move to new button
         {
             //new game
-            //eventually have difficulty levels Easy, Medium, Hard, Random
+            //eventually have difficulty levels Easy, Medium, Hard, Custom
             //Size resolution is important as well
             int granularity;
             //display granularity on buttons
 
             granularity = 10;  //width&height|granularity = size of rectangles
-
+            //if custom, popup window with size input
+            /*while(Int32.GetText(number) > 800)
+             * {
+             *      //popup.Text("Max size is 800, sorry);
+             * }
+             */
+            Grid planetgrid = new Grid(planetmap.height / granularity, planetmap.width / granularity);
         }
     }
 
@@ -55,5 +61,8 @@ namespace TerraformSimCS
            </summary>*/
         public void TerraformSimulation()
         { }
+        private Task EvaluateCellTask;
+        private Task EvaluateGridGrowthTask;
+
     }
 }

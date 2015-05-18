@@ -115,5 +115,20 @@ namespace TerraformSimCS
         {
             GridObj.Add(row);
         }
+        public static void Display(Grid grid)
+        {
+            foreach(Row row in grid.GridObj)
+            {
+                foreach(Cell cell in row.Cells)
+                {
+                    //draw bitmap
+                }
+            }
+        }
+
+        public static void Copy(Grid source, Grid target)
+        {
+            /*Replace this with an object pool?*/
+        }
     }
 }
